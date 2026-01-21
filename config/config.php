@@ -11,7 +11,7 @@ $basededatos = getenv("DB_NAME");
 $puerto = getenv("DB_PORT") ?: 3306;
 
 // Crear la conexión
-$con = mysqli_connect($servidor, $usuario, $password, $basededatos);
+$con = mysqli_connect($servidor, $usuario, $password, $basededatos, $puerto);
 
 // Verificar la conexión
 if (!$con) {
